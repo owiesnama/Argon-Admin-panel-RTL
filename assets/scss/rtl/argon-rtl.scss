@@ -1,0 +1,44 @@
+* {
+  text-align: right;
+}
+
+.text-right {
+  text-align: left !important;
+}
+
+.col {
+  text-align: right;
+}
+
+.mr-2{
+  margin-left:.5rem;
+}
+.text-xl-left {
+  text-align: right !important;
+}
+
+.ml-2, .mx-2 {
+  margin-right: 0.5rem !important;
+  margin-left: 0 !important;
+}
+.navbar{
+  .dropdown-menu-right {
+    right: auto;
+    left: 0;
+    .dropdown-item {
+      text-align: right;
+      i {
+        margin-right: 0;
+        margin-left: 1rem;
+      }
+    }
+    &:before{
+      right: auto;
+      left: 20px;
+    }
+  }
+}
+
+canvas{
+  direction: rtl;
+}
