@@ -31,6 +31,7 @@
     "gulp-util": "^3.0.8",
     "gulp-wait": "0.0.2",
     "laravel-mix": "^2.1.14",
+    "laravel-mix-purgecss": "^3.0.0",
     "postcss-flexbugs-fixes": "^3.3.1",
     "pump": "^3.0.0",
     "run-sequence": "^2.2.1"
