@@ -1,2 +1,9 @@
 
-/node_modules/*
+/node_modules/
+assets/vendor/@fortawesome/fontawesome-free/less/
+assets/vendor/@fortawesome/fontawesome-free/scss/
+assets/vendor/anchor-js/docs/
+assets/vendor/anchor-js/test/
+assets/vendor/chart.js/dist/docs/
+assets/vendor/holderjs/src/
+assets/vendor/holderjs/test/

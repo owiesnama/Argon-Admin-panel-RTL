@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
 * {
   text-align: right;
+  font-family: 'Cairo', sans-serif;
 }
 
 .text-right {
@@ -10,9 +13,10 @@
   text-align: right;
 }
 
-.mr-2{
-  margin-left:.5rem;
+.mr-2 {
+  margin-left: .5rem;
 }
+
 .text-xl-left {
   text-align: right !important;
 }
@@ -21,7 +25,13 @@
   margin-right: 0.5rem !important;
   margin-left: 0 !important;
 }
-.navbar{
+
+.mr-4, .mx-4 {
+  margin-right: 0 !important;
+  margin-left: 1.5rem;
+}
+
+.navbar {
   .dropdown-menu-right {
     right: auto;
     left: 0;
@@ -32,13 +42,16 @@
         margin-left: 1rem;
       }
     }
-    &:before{
+    &::before {
       right: auto;
       left: 20px;
     }
   }
 }
 
-canvas{
+canvas {
   direction: rtl;
 }
+
+@import "navbars/navbars";
+@import "dropdowns/dropdown";
