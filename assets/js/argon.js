@@ -22,17 +22,17 @@
 
 'use strict';
 
-var Datepicker = (function() {
+let Datepicker = (function() {
 
-	// Variables
+	// letiables
 
-	var $datepicker = $('.datepicker');
+	let $datepicker = $('.datepicker');
 
 
 	// Methods
 
 	function init($this) {
-		var options = {
+		let options = {
 			disableTouchKeyboard: true,
 			autoclose: false
 		};
@@ -57,11 +57,11 @@ var Datepicker = (function() {
 
 'use strict';
 
-var CopyIcon = (function() {
+let CopyIcon = (function() {
 
-	// Variables
+	// letiables
 
-	var $element = '.btn-icon-clipboard',
+	let $element = '.btn-icon-clipboard',
 		$btn = $($element);
 
 
@@ -75,7 +75,7 @@ var CopyIcon = (function() {
 			$this.tooltip('hide');
 		});
 
-		var clipboard = new ClipboardJS($element);
+		let clipboard = new ClipboardJS($element);
 
 		clipboard.on('success', function(e) {
 			$(e.trigger)
@@ -103,11 +103,11 @@ var CopyIcon = (function() {
 
 'use strict';
 
-var FormControl = (function() {
+let FormControl = (function() {
 
-	// Variables
+	// letiables
 
-	var $input = $('.form-control');
+	let $input = $('.form-control');
 
 
 	// Methods
@@ -131,7 +131,7 @@ var FormControl = (function() {
 // Google maps
 //
 
-var $map = $('#map-canvas'),
+let $map = $('#map-canvas'),
     map,
     lat,
     lng,
@@ -143,8 +143,8 @@ function initMap() {
     lat = map.getAttribute('data-lat');
     lng = map.getAttribute('data-lng');
 
-    var myLatlng = new google.maps.LatLng(lat, lng);
-    var mapOptions = {
+    let myLatlng = new google.maps.LatLng(lat, lng);
+    let mapOptions = {
         zoom: 12,
         scrollwheel: false,
         center: myLatlng,
@@ -154,17 +154,17 @@ function initMap() {
 
     map = new google.maps.Map(map, mapOptions);
 
-    var marker = new google.maps.Marker({
+    let marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
         animation: google.maps.Animation.DROP,
         title: 'Hello World!'
     });
 
-    var contentString = '<div class="info-window-content"><h2>Argon Dashboard</h2>' +
+    let contentString = '<div class="info-window-content"><h2>Argon Dashboard</h2>' +
         '<p>A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</p></div>';
 
-    var infowindow = new google.maps.InfoWindow({
+    let infowindow = new google.maps.InfoWindow({
         content: contentString
     });
 
@@ -183,18 +183,18 @@ if($map.length) {
 //
 // 'use strict';
 //
-// var Headroom = (function() {
+// let Headroom = (function() {
 //
-// 	// Variables
+// 	// letiables
 //
-// 	var $headroom = $('#navbar-main');
+// 	let $headroom = $('#navbar-main');
 //
 //
 // 	// Methods
 //
 // 	function init($this) {
 //
-//     var headroom = new Headroom(document.querySelector("#navbar-main"), {
+//     let headroom = new Headroom(document.querySelector("#navbar-main"), {
 //         offset: 300,
 //         tolerance: {
 //             up: 30,
@@ -218,13 +218,13 @@ if($map.length) {
 
 'use strict';
 
-var Navbar = (function() {
+let Navbar = (function() {
 
-	// Variables
+	// letiables
 
-	var $nav = $('.navbar-nav, .navbar-nav .nav');
-	var $collapse = $('.navbar .collapse');
-	var $dropdown = $('.navbar .dropdown');
+	let $nav = $('.navbar-nav, .navbar-nav .nav');
+	let $collapse = $('.navbar .collapse');
+	let $dropdown = $('.navbar .dropdown');
 
 	// Methods
 
@@ -233,7 +233,7 @@ var Navbar = (function() {
 	}
 
     function closeDropdown($this) {
-        var $dropdownMenu = $this.find('.dropdown-menu');
+        let $dropdownMenu = $this.find('.dropdown-menu');
 
         $dropdownMenu.addClass('close');
 
@@ -265,11 +265,11 @@ var Navbar = (function() {
 //
 
 
-var NavbarCollapse = (function() {
+let NavbarCollapse = (function() {
 
-	// Variables
+	// letiables
 
-	var $nav = $('.navbar-nav'),
+	let $nav = $('.navbar-nav'),
 		$collapse = $('.navbar .collapse');
 
 
@@ -308,11 +308,11 @@ var NavbarCollapse = (function() {
 
 'use strict';
 
-var noUiSlider = (function() {
+let noUiSlider = (function() {
 
-	// Variables
+	// letiables
 
-	// var $sliderContainer = $('.input-slider-container'),
+	// let $sliderContainer = $('.input-slider-container'),
 	// 		$slider = $('.input-slider'),
 	// 		$sliderId = $slider.attr('id'),
 	// 		$sliderMinValue = $slider.data('range-value-min');
@@ -339,16 +339,16 @@ var noUiSlider = (function() {
 	if ($(".input-slider-container")[0]) {
 			$('.input-slider-container').each(function() {
 
-					var slider = $(this).find('.input-slider');
-					var sliderId = slider.attr('id');
-					var minValue = slider.data('range-value-min');
-					var maxValue = slider.data('range-value-max');
+					let slider = $(this).find('.input-slider');
+					let sliderId = slider.attr('id');
+					let minValue = slider.data('range-value-min');
+					let maxValue = slider.data('range-value-max');
 
-					var sliderValue = $(this).find('.range-slider-value');
-					var sliderValueId = sliderValue.attr('id');
-					var startValue = sliderValue.data('range-value-low');
+					let sliderValue = $(this).find('.range-slider-value');
+					let sliderValueId = sliderValue.attr('id');
+					let startValue = sliderValue.data('range-value-low');
 
-					var c = document.getElementById(sliderId),
+					let c = document.getElementById(sliderId),
 							d = document.getElementById(sliderValueId);
 
 					noUiSlider.create(c, {
@@ -368,7 +368,7 @@ var noUiSlider = (function() {
 	}
 
 	if ($("#input-slider-range")[0]) {
-			var c = document.getElementById("input-slider-range"),
+			let c = document.getElementById("input-slider-range"),
 					d = document.getElementById("input-slider-range-value-low"),
 					e = document.getElementById("input-slider-range-value-high"),
 					f = [d, e];
@@ -393,11 +393,11 @@ var noUiSlider = (function() {
 
 'use strict';
 
-var Popover = (function() {
+let Popover = (function() {
 
-	// Variables
+	// letiables
 
-	var $popover = $('[data-toggle="popover"]'),
+	let $popover = $('[data-toggle="popover"]'),
 		$popoverClass = '';
 
 
@@ -408,7 +408,7 @@ var Popover = (function() {
 			$popoverClass = 'popover-' + $this.data('color');
 		}
 
-		var options = {
+		let options = {
 			trigger: 'focus',
 			template: '<div class="popover ' + $popoverClass + '" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
 		};
@@ -433,13 +433,13 @@ var Popover = (function() {
 
 'use strict';
 
-var ScrollTo = (function() {
+let ScrollTo = (function() {
 
 	//
-	// Variables
+	// letiables
 	//
 
-	var $scrollTo = $('.scroll-me, [data-scroll-to], .toc-entry a');
+	let $scrollTo = $('.scroll-me, [data-scroll-to], .toc-entry a');
 
 
 	//
@@ -447,9 +447,9 @@ var ScrollTo = (function() {
 	//
 
 	function scrollTo($this) {
-		var $el = $this.attr('href');
-        var offset = $this.data('scroll-to-offset') ? $this.data('scroll-to-offset') : 0;
-		var options = {
+		let $el = $this.attr('href');
+        let offset = $this.data('scroll-to-offset') ? $this.data('scroll-to-offset') : 0;
+		let options = {
 			scrollTop: $($el).offset().top - offset
 		};
 
@@ -478,11 +478,11 @@ var ScrollTo = (function() {
 
 'use strict';
 
-var Tooltip = (function() {
+let Tooltip = (function() {
 
-	// Variables
+	// letiables
 
-	var $tooltip = $('[data-toggle="tooltip"]');
+	let $tooltip = $('[data-toggle="tooltip"]');
 
 
 	// Methods
@@ -506,18 +506,18 @@ var Tooltip = (function() {
 
 'use strict';
 
-var Charts = (function() {
+let Charts = (function() {
 
-	// Variable
+	// letiable
 
-	var $toggle = $('[data-toggle="chart"]');
-	var mode = 'light';//(themeMode) ? themeMode : 'light';
-	var fonts = {
+	let $toggle = $('[data-toggle="chart"]');
+	let mode = 'light';//(themeMode) ? themeMode : 'light';
+	let fonts = {
 		base: 'Open Sans'
 	}
 
 	// Colors
-	var colors = {
+	let colors = {
 		gray: {
 			100: '#f6f9fc',
 			200: '#e9ecef',
@@ -550,7 +550,7 @@ var Charts = (function() {
 	function chartOptions() {
 
 		// Options
-		var options = {
+		let options = {
 			defaults: {
 				global: {
 					responsive: true,
@@ -598,7 +598,7 @@ var Charts = (function() {
 						custom: function(model) {
 
 							// Get tooltip
-							var $tooltip = $('#chart-tooltip');
+							let $tooltip = $('#chart-tooltip');
 
 							// Create tooltip on first render
 							if (!$tooltip.length) {
@@ -620,9 +620,9 @@ var Charts = (function() {
 
 							// Fill with content
 							if (model.body) {
-								var titleLines = model.title || [];
-								var bodyLines = model.body.map(getBody);
-								var html = '';
+								let titleLines = model.title || [];
+								let bodyLines = model.body.map(getBody);
+								let html = '';
 
 								// Add arrow
 								html += '<div class="arrow"></div>';
@@ -634,10 +634,10 @@ var Charts = (function() {
 
 								// Add body
 								bodyLines.forEach(function(body, i) {
-									var colors = model.labelColors[i];
-									var styles = 'background-color: ' + colors.backgroundColor;
-									var indicator = '<span class="badge badge-dot"><i class="bg-primary"></i></span>';
-									var align = (bodyLines.length > 1) ? 'justify-content-left' : 'justify-content-center';
+									let colors = model.labelColors[i];
+									let styles = 'background-color: ' + colors.backgroundColor;
+									let indicator = '<span class="badge badge-dot"><i class="bg-primary"></i></span>';
+									let align = (bodyLines.length > 1) ? 'justify-content-left' : 'justify-content-center';
 									html += '<div class="popover-body d-flex align-items-center ' + align + '">' + indicator + body + '</div>';
 								});
 
@@ -645,19 +645,19 @@ var Charts = (function() {
 							}
 
 							// Get tooltip position
-							var $canvas = $(this._chart.canvas);
+							let $canvas = $(this._chart.canvas);
 
-							var canvasWidth = $canvas.outerWidth();
-							var canvasHeight = $canvas.outerHeight();
+							let canvasWidth = $canvas.outerWidth();
+							let canvasHeight = $canvas.outerHeight();
 
-							var canvasTop = $canvas.offset().top;
-							var canvasLeft = $canvas.offset().left;
+							let canvasTop = $canvas.offset().top;
+							let canvasLeft = $canvas.offset().left;
 
-							var tooltipWidth = $tooltip.outerWidth();
-							var tooltipHeight = $tooltip.outerHeight();
+							let tooltipWidth = $tooltip.outerWidth();
+							let tooltipHeight = $tooltip.outerHeight();
 
-							var top = canvasTop + model.caretY - tooltipHeight - 16;
-							var left = canvasLeft + model.caretX - tooltipWidth / 2;
+							let top = canvasTop + model.caretY - tooltipHeight - 16;
+							let left = canvasLeft + model.caretX - tooltipWidth / 2;
 
 							// Display tooltip
 							$tooltip.css({
@@ -670,9 +670,9 @@ var Charts = (function() {
 						},
 						callbacks: {
 							label: function(item, data) {
-								var label = data.datasets[item.datasetIndex].label || '';
-								var yLabel = item.yLabel;
-								var content = '';
+								let label = data.datasets[item.datasetIndex].label || '';
+								let yLabel = item.yLabel;
+								let content = '';
 
 								if (data.datasets.length > 1) {
 									content += '<span class="badge badge-primary mr-auto">' + label + '</span>';
@@ -689,12 +689,12 @@ var Charts = (function() {
 					tooltips: {
 						callbacks: {
 							title: function(item, data) {
-								var title = data.labels[item[0].index];
+								let title = data.labels[item[0].index];
 								return title;
 							},
 							label: function(item, data) {
-								var value = data.datasets[0].data[item.index];
-								var content = '';
+								let value = data.datasets[0].data[item.index];
+								let content = '';
 
 								content += '<span class="popover-body-value">' + value + '</span>';
 								return content;
@@ -702,11 +702,11 @@ var Charts = (function() {
 						}
 					},
 					legendCallback: function(chart) {
-						var data = chart.data;
-						var content = '';
+						let data = chart.data;
+						let content = '';
 
 						data.labels.forEach(function(label, index) {
-							var bgColor = data.datasets[0].backgroundColor[index];
+							let bgColor = data.datasets[0].backgroundColor[index];
 
 							content += '<span class="chart-legend-item">';
 							content += '<i class="chart-legend-indicator" style="background-color: ' + bgColor + '"></i>';
@@ -764,7 +764,7 @@ var Charts = (function() {
 
 	// Parse global options
 	function parseOptions(parent, options) {
-		for (var item in options) {
+		for (let item in options) {
 			if (typeof options[item] !== 'object') {
 				parent[item] = options[item];
 			} else {
@@ -775,7 +775,7 @@ var Charts = (function() {
 
 	// Push options
 	function pushOptions(parent, options) {
-		for (var item in options) {
+		for (let item in options) {
 			if (Array.isArray(options[item])) {
 				options[item].forEach(function(data) {
 					parent[item].push(data);
@@ -788,7 +788,7 @@ var Charts = (function() {
 
 	// Pop options
 	function popOptions(parent, options) {
-		for (var item in options) {
+		for (let item in options) {
 			if (Array.isArray(options[item])) {
 				options[item].forEach(function(data) {
 					parent[item].pop();
@@ -801,9 +801,9 @@ var Charts = (function() {
 
 	// Toggle options
 	function toggleOptions(elem) {
-		var options = elem.data('add');
-		var $target = $(elem.data('target'));
-		var $chart = $target.data('chart');
+		let options = elem.data('add');
+		let $target = $(elem.data('target'));
+		let $chart = $target.data('chart');
 
 		if (elem.is(':checked')) {
 
@@ -824,9 +824,9 @@ var Charts = (function() {
 
 	// Update options
 	function updateOptions(elem) {
-		var options = elem.data('update');
-		var $target = $(elem.data('target'));
-		var $chart = $target.data('chart');
+		let options = elem.data('update');
+		let $target = $(elem.data('target'));
+		let $chart = $target.data('chart');
 
 		// Parse options
 		parseOptions($chart, options);
@@ -842,8 +842,8 @@ var Charts = (function() {
 	function toggleTicks(elem, $chart) {
 
 		if (elem.data('prefix') !== undefined || elem.data('prefix') !== undefined) {
-			var prefix = elem.data('prefix') ? elem.data('prefix') : '';
-			var suffix = elem.data('suffix') ? elem.data('suffix') : '';
+			let prefix = elem.data('prefix') ? elem.data('prefix') : '';
+			let suffix = elem.data('suffix') ? elem.data('suffix') : '';
 
 			// Update ticks
 			$chart.options.scales.yAxes[0].ticks.callback = function(value) {
@@ -854,9 +854,9 @@ var Charts = (function() {
 
 			// Update tooltips
 			$chart.options.tooltips.callbacks.label = function(item, data) {
-				var label = data.datasets[item.datasetIndex].label || '';
-				var yLabel = item.yLabel;
-				var content = '';
+				let label = data.datasets[item.datasetIndex].label || '';
+				let yLabel = item.yLabel;
+				let content = '';
 
 				if (data.datasets.length > 1) {
 					content += '<span class="popover-body-label mr-auto">' + label + '</span>';
@@ -880,14 +880,14 @@ var Charts = (function() {
 	// Toggle options
 	$toggle.on({
 		'change': function() {
-			var $this = $(this);
+			let $this = $(this);
 
 			if ($this.is('[data-add]')) {
 				toggleOptions($this);
 			}
 		},
 		'click': function() {
-			var $this = $(this);
+			let $this = $(this);
 
 			if ($this.is('[data-update]')) {
 				updateOptions($this);
@@ -910,14 +910,14 @@ var Charts = (function() {
 // Orders chart
 //
 
-var OrdersChart = (function() {
+let OrdersChart = (function() {
 
 	//
-	// Variables
+	// letiables
 	//
 
-	var $chart = $('#chart-orders');
-	var $ordersSelect = $('[name="ordersSelect"]');
+	let $chart = $('#chart-orders');
+	let $ordersSelect = $('[name="ordersSelect"]');
 
 
 	//
@@ -928,7 +928,7 @@ var OrdersChart = (function() {
 	function initChart($chart) {
 
 		// Create chart
-		var ordersChart = new Chart($chart, {
+		let ordersChart = new Chart($chart, {
 			type: 'bar',
 			options: {
 				scales: {
@@ -946,9 +946,9 @@ var OrdersChart = (function() {
 				tooltips: {
 					callbacks: {
 						label: function(item, data) {
-							var label = data.datasets[item.datasetIndex].label || '';
-							var yLabel = item.yLabel;
-							var content = '';
+							let label = data.datasets[item.datasetIndex].label || '';
+							let yLabel = item.yLabel;
+							let content = '';
 
 							if (data.datasets.length > 1) {
 								content += '<span class="popover-body-label mr-auto">' + label + '</span>';
@@ -992,18 +992,18 @@ var OrdersChart = (function() {
 // Sales chart
 //
 
-var SalesChart = (function() {
+let SalesChart = (function() {
 
-	// Variables
+	// letiables
 
-	var $chart = $('#chart-sales');
+	let $chart = $('#chart-sales');
 
 
 	// Methods
 
 	function init($chart) {
 
-		var salesChart = new Chart($chart, {
+		let salesChart = new Chart($chart, {
 			type: 'line',
 			options: {
 				scales: {
@@ -1024,9 +1024,9 @@ var SalesChart = (function() {
 				tooltips: {
 					callbacks: {
 						label: function(item, data) {
-							var label = data.datasets[item.datasetIndex].label || '';
-							var yLabel = item.yLabel;
-							var content = '';
+							let label = data.datasets[item.datasetIndex].label || '';
+							let yLabel = item.yLabel;
+							let content = '';
 
 							if (data.datasets.length > 1) {
 								content += '<span class="popover-body-label mr-auto">' + label + '</span>';

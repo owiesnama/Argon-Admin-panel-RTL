@@ -30936,7 +30936,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   bottom: 0;
 }
 
-* {
+*,
+.form-control {
   text-align: right;
   font-family: 'Cairo', sans-serif;
 }
@@ -31202,7 +31203,7 @@ canvas {
   }
 
   .navbar-collapse .collapse-close {
-    text-align: right;
+    text-align: left;
   }
 
   .navbar-collapse.collapsing,
