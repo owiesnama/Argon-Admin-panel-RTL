@@ -161,8 +161,8 @@ function initMap() {
         title: 'Hello World!'
     });
 
-    let contentString = '<div class="info-window-content"><h2>Argon Dashboard</h2>' +
-        '<p>A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</p></div>';
+    let contentString = '<div class="info-window-content"><h2>لوحة التحكم</h2>' +
+        '<p>لوحة تحكم بتصميم عصري حديث</p></div>';
 
     let infowindow = new google.maps.InfoWindow({
         content: contentString
@@ -962,9 +962,9 @@ let OrdersChart = (function() {
 				}
 			},
 			data: {
-				labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+				labels: ['يوليو', 'اغسطس', 'سبتمبر', 'اكتوبر', 'نوفمبر', 'ديسمبر'],
 				datasets: [{
-					label: 'Sales',
+					label: 'المبيعات',
 					data: [25, 20, 30, 22, 17, 29]
 				}]
 			}
@@ -1015,7 +1015,7 @@ let SalesChart = (function() {
 						ticks: {
 							callback: function(value) {
 								if (!(value % 10)) {
-									return '$' + value + 'k';
+									return 'الف' + value + 'ريال';
 								}
 							}
 						}
@@ -1032,16 +1032,16 @@ let SalesChart = (function() {
 								content += '<span class="popover-body-label mr-auto">' + label + '</span>';
 							}
 
-							content += '<span class="popover-body-value">$' + yLabel + 'k</span>';
+							content += '<span class="popover-body-value">الف' + yLabel + 'ريال</span>';
 							return content;
 						}
 					}
 				}
 			},
 			data: {
-				labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+				labels: ['مايو', 'يونيو', 'يوليو', 'اغسطس', 'سبتمبر', 'اكتوبر', 'نوفمبر', 'ديسمبر'],
 				datasets: [{
-					label: 'Performance',
+					label: 'الأداء',
 					data: [0, 20, 10, 30, 15, 40, 20, 60, 60]
 				}]
 			}
