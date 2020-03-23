@@ -33,44 +33,24 @@ If you want to get inspiration or just show something directly to your clients, 
 * [Licensing](#licensing)
 * [Useful Links](#useful-links)
 
-## Versions
-
-We are coding Argon Dashboard for this frameworks also. Chek'em out:
-
-### Coming soon
-
-- Vue.js
-- Angular
-- React
-- Sketch
-- Photoshop
 
 ## Demo
 
-- [Index Page](https://demos.creative-tim.com/argon-dashboard)
-- [Dashboard](https://demos.creative-tim.com/argon-dashboard/index.html)
-- [Profile Page](https://demos.creative-tim.com/argon-dashboard/examples/profile.html)
-- [Login Page](https://demos.creative-tim.com/argon-dashboard/examples/login.html)
-- [Register Page](https://demos.creative-tim.com/argon-dashboard/examples/register.html)
-- [Tables](https://demos.creative-tim.com/argon-dashboard/examples/tables.html)
-- [Maps](https://demos.creative-tim.com/argon-dashboard/examples/maps.html)
-- [Documentation](https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html)
+- [Dashboard](https://owiesnama.github.io/argon_dashboard_rtl_creative_tim/)
+- [Profile Page](https://owiesnama.github.io/argon_dashboard_rtl_creative_tim/examples/profile.html)
+- [Login Page](https://owiesnama.github.io/argon_dashboard_rtl_creative_tim/examples/login.html)
+- [Register Page](https://owiesnama.github.io/argon_dashboard_rtl_creative_tim/examples/register.html)
+- [Tables](https://owiesnama.github.io/argon_dashboard_rtl_creative_tim/examples/tables.html)
+- [Maps](https://owiesnama.github.io/argon_dashboard_rtl_creative_tim/examples/maps.html)
+- [Documentation](https://owiesnama.github.io/argon_dashboard_rtl_creative_tim/docs/getting-started/overview.html)
 
 [View More](https://demos.creative-tim.com/argon-dashboard)
 
 ## Download and Installation
 
-- [Download from Github](https://github.com/creativetimofficial/argon-dashboard/archive/master.zip)
-- [Download from Creative Tim](https://www.creative-tim.com/product/argon-dashboard)
+- [Download from Github](https://github.com/owiesnama/argon_dashboard_rtl_creative_tim/archive/master.zip)
 
-
-- Install with Npm: `npm i @creative-tim-official/argon-dashboard-free`
-
-- Install with Yarn: `yarn add @creative-tim-official/argon-dashboard-free`
-
-- Install with Composer: `composer create-project creativetimofficial/argon-dashboard-free`
-
-- Clone from Github: `git clone https://github.com/creativetimofficial/argon-dashboard.git`
+- Clone from Github: `git clone https://github.com/owiesnama/argon_dashboard_rtl_creative_tim.git`
 
 
 ## Documentation
@@ -112,51 +92,15 @@ argon/
 
 ```
 
-## Browser Support
-
-At present, we officially aim to support the last two versions of the following browsers:
-
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
-
 ## Resources
 
-- Demo: <https://demos.creative-tim.com/argon-dashboard>
-- Download: <https://www.creative-tim.com/product/argon-dashboard>
+- Demo: <https://owiesnama.github.io/argon_dashboard_rtl_creative_tim/>
 - Documentation: <https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html>
 - License Agreement: <https://www.creative-tim.com/license>
-- Support: <https://www.creative-tim.com/contact-us>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/argon-dashboard/issues)
-
-## Reporting Issues
-
-We use GitHub Issues as the official bug tracker for the Argon Dashboard. Here are some advices for our users that want to report an issue:
-
-1. Make sure that you are using the latest version of the Argon Dashboard. Check the CHANGELOG from your copy on our [website](https://www.creative-tim.com).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
-
-## Technical Support or Questions
-
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
 
 ## Licensing
 
 - Copyright &copy; 2018 Creative Tim (https://www.creative-tim.com)
 
 - Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
-
-## Useful Links
-
-- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
-
-## Social Media
-
-- Twitter: <https://twitter.com/CreativeTim>
-- Facebook: <https://www.facebook.com/CreativeTim>
-- Dribbble: <https://dribbble.com/creativetim>
-- Google+: <https://plus.google.com/+CreativetimPage>
-- Instagram: <https://www.instagram.com/CreativeTimOfficial>
 
